@@ -194,11 +194,11 @@ bool encoder_update_user(uint8_t index, bool clockwise) {
               }
             }
             else{ // 아무것도 없이 엔코더 돌린경우 
-              clockwise ? tap_code(KC_MS_DOWN) : tap_code(KC_MS_UP);
+              clockwise ? tap_code(KC_WH_D) : tap_code(KC_WH_U);
             }
             break;
         case _Mouse: // 1th layer
-            clockwise ? tap_code(KC_MS_DOWN) : tap_code(KC_MS_UP);
+            clockwise ? tap_code(KC_WH_D) : tap_code(KC_WH_U);
             break;
           
         default:
